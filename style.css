@@ -1,0 +1,101 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+h1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#subhead {
+  position: fixed;
+  top: 80px; /* right under h1 */
+  left: 20px;
+  z-index: 10;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 400px; /* optional, so it doesn't stretch too far */
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#map-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  background: #ffffff;
+}
+
+#map {
+  width: 95%;
+  height: 95%;
+}
+
+#map-title {
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: white;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#map-title.visible {
+  opacity: 1;
+}
+
+#legend {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.85);
+  padding: 5px;
+  border-radius: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#scroll-container {
+  position: relative;
+  width: 35%;
+  margin-left: 5%;
+  z-index: 5;
+  padding-top: 100vh; /* first step offscreen */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.step {
+  height: 20vh;
+  margin-bottom: 100vh; /* space between steps */
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.step p {
+  margin: 0;
+}

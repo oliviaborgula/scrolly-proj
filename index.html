@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DC Built Environment & Health</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Map container -->
+  <div id="map-container">
+    <svg id="map"></svg>
+    <div id="map-title"></div>
+    <div id="legend"></div>
+  </div>
+
+  <!-- Scrolly text -->
+  <div id="scroll-container">
+    <!-- Intro step with NO data-indicator to show base map -->
+    <div class="step">
+      <h3>How walkable is your part of D.C.?</h3>
+      <p>Start scrolling to explore how different environmental factors vary across the city.</p>
+    </div>
+    
+    <div class="step" data-indicator="m5_4_bike_lanes">
+      <p>Bike lanes have steadily increased since 2001 thanks to projects like the Strategic Bikeways Plan and Capital Bikeshare. But areas with higher poverty rates have the fewest bike lane miles and also have more fatal crashes than any other areas outside downtown.</p>
+    </div>
+    
+    <div class="step" data-indicator="m8_2_parks">
+      <p>D.C. has been named the nation's best big-city park system for five years in a row by the Trust for Public Land's ParkScore Index. The organization found that 90% of D.C. and Arlington residents live within a 10-minute walk of a park.</p>
+    </div>
+    
+    <div class="step" data-indicator="m8_1_urban_tree_canopy">
+      <p>The current average tree canopy coverage for the city is 37%, down from 50% in 1950. Experts say tree canopy helps limit pollution and stormwater runoff, but is threatened by increased need for housing and development.</p>
+    </div>
+    
+    <div class="step" data-indicator="m8_3_trails">
+      <p>There's a continuous effort to expand and improve the network of trails for recreation and transportation, with initiatives like the Capital Trails Coalition aiming to create an extensive, equitable trail system.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
